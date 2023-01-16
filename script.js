@@ -1,6 +1,9 @@
 var x = 1;
 
-let doSomthing = () => console.log(x++);
+let doSomthing = () => {
+    let set =document.querySelector("#set")
+    set.textContent = `My counter: ${x++} Secends`
+}
 
 
 setInterval(
