@@ -5,9 +5,13 @@ let doSomthing = () => {
     set.textContent = `My counter: ${x++} Secends`
 }
 
-
-setInterval(
+let stopDoingSomThing =() => clearInterval(myInterval)
+let myInterval = setInterval(
     doSomthing, 1000
+)
+
+setTimeout(
+    stopDoingSomThing, 11000
 )
 
 
