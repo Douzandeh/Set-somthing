@@ -1,3 +1,8 @@
+// setTimeout(
+//     () => alert("Welcome to my site!"), 3000
+//     () => console.log("Welcome to my site"), 3000
+// )
+
 var x = 1;
 
 let doSomthing = () => {
@@ -10,12 +15,9 @@ let myInterval = setInterval(
     doSomthing, 1000
 )
 
-setTimeout(
-    stopDoingSomThing, 11000
-)
-
-
 // setTimeout(
-//     () => alert("Welcome to my site!"), 3000
-//     () => console.log("Welcome to my site"), 3000
+//     stopDoingSomThing, 11000
 // )
+
+let btn = document.querySelector("#btn")
+btn.addEventListener('click' , stopDoingSomThing)
